@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: black;
+} 
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} 
+
+.navbar_links {
+    display: flex;
+    justify-content: space-between; 
+    width: 80%;
+    margin: 15px 0;
+} 
+
+.navbar_links_element {
+    cursor: pointer;
+    text-transform: capitalize;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}

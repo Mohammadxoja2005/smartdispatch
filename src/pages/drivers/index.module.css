@@ -1,0 +1,43 @@
+.drivers {
+    width: 100%; 
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+} 
+
+.container {
+    width: 95%; 
+    /* outline: 2px solid blue; */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}  
+
+.search {
+    display: flex;
+    margin-bottom: 20px;
+} 
+
+.btn {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 2px;
+    padding: 4px;
+}
+
+.main_table {
+    display: flex;
+    flex-direction: column;
+} 
+
+.main_table_control {
+    display: flex;
+    justify-content: space-between;
+}  
+.main_table_control_raw {
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+}
