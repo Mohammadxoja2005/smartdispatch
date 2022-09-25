@@ -143,23 +143,12 @@ const Drivers: FC = () => {
 
     useEffect(() => {
        const data = fakeData.filter((value: any) => {
-            const initialValue = value.name.toLowerCase().includes(searchRes); 
+            const initialValue = value.name.toLowerCase().includes(searchRes.toLocaleLowerCase()); 
             return initialValue;  
        })  
 
        setDataSearch(data); 
     }, [searchRes])
-
-    // const submitSearch = () => {
-
-    //     const data = fakeData.filter((value: any) => {
-    //         const initialValue = value.name.toLowerCase().includes(searchRes.toLowerCase());
-    //         return initialValue;
-    //     })
-
-    //     setDataSearch(data);
-    //     console.log(dataSearch);
-    // }
 
     return (
         <div className={styles.drivers} >
@@ -167,7 +156,6 @@ const Drivers: FC = () => {
                 <div className={styles.search} >
                     <input type="text" placeholder="search by name" onChange={(e) => setSearchRes(e.target.value)} />
                     <div className={styles.btn} >click</div>
-
                 </div>
                 <div className={styles.main_table}>
                     {dataSearch && dataSearch.map((value: any) => {
@@ -181,7 +169,6 @@ const Drivers: FC = () => {
                             </div>
                         )
                     })
-
                     }
                 </div>
             </div>
